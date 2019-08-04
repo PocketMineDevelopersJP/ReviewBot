@@ -4,9 +4,10 @@ import { Client } from 'klasa'
 dotenv.config()
 
 const client = new Client({
-  disabledCorePieces: ['commands'],
+  prefix: 're!!',
   typing: true,
-  prefix: 're!!'
+  language: 'ja-JP',
+  disabledCorePieces: ['commands']
 })
 
 client.login()
