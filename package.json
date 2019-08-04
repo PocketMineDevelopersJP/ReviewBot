@@ -1,0 +1,46 @@
+{
+  "name": "reviewbot",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/ReviewBot.js",
+  "scripts": {
+    "start": "node ./dist/ReviewBot.js",
+    "watch": "tsc -p -w .",
+    "compile": "tsc -p .",
+    "compile:test": "tsc -p . --noEmit",
+    "lint": "eslint --ext .ts --ignore-path .gitignore ./src",
+    "lint:fix": "eslint --ext .ts --ignore-path .gitignore ./src --fix",
+    "test": "npm run lint && npm run compile:test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PocketMineDevelopersJP/ReviewBot.git"
+  },
+  "author": "PocketMineDevelopersJP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PocketMineDevelopersJP/ReviewBot/issues"
+  },
+  "homepage": "https://github.com/PocketMineDevelopersJP/ReviewBot#readme",
+  "dependencies": {
+    "discord.js": "github:discordjs/discord.js#5af8cb8e6e7591e81f758a8b0f6748db7c2f12f1",
+    "dotenv": "^8.0.0",
+    "klasa": "github:dirigeants/klasa#93cc8f2a4d0e3bef4715090e18f18f4ff19007d1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^12.6.9",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^13.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "typescript": "^3.5.3"
+  },
+  "engines": {
+    "node": ">=10.1.0"
+  }
+}
