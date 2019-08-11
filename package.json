@@ -23,9 +23,9 @@
   },
   "homepage": "https://github.com/PocketMineDevelopersJP/ReviewBot#readme",
   "dependencies": {
-    "discord.js": "github:discordjs/discord.js#5af8cb8e6e7591e81f758a8b0f6748db7c2f12f1",
+    "discord.js": "github:discordjs/discord.js#master",
     "dotenv": "^8.0.0",
-    "klasa": "github:dirigeants/klasa#93cc8f2a4d0e3bef4715090e18f18f4ff19007d1"
+    "klasa": "github:dirigeants/klasa#v1.0.0-alpha"
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.1",
