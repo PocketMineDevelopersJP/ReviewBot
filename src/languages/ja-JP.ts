@@ -1,9 +1,9 @@
 // Copyright (c) 2017-2019 dirigeants. All rights reserved. MIT license.
-import { Language, util, KlasaClient, LanguageStore, LanguageOptions } from 'klasa'
+import { Language, util, LanguageStore, LanguageOptions } from 'klasa'
 
 export default class extends Language {
-  constructor (client: KlasaClient, store: LanguageStore, file: string[], directory: string, options?: LanguageOptions) {
-    super(client, store, file, directory, options)
+  constructor (store: LanguageStore, file: string[], directory: string, options?: LanguageOptions) {
+    super(store, file, directory, options)
 
     this.language = {
       DEFAULT: (key) => `${key} はまだ日本語に翻訳されていません。`,
