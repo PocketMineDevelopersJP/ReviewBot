@@ -1,0 +1,8 @@
+language: "node_js"
+node_js: 10
+cache: "npm"
+
+jobs:
+  include:
+    - script: "npm run lint"
+    - script: "npm run compile:test"
